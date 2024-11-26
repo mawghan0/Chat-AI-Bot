@@ -79,7 +79,7 @@ const Chat = () => {
   };
 
   return (
-    <div className="bg-sky-50 shadow-md rounded-3xl p-4 flex flex-col h-[500px] relative">
+    <div className="bg-sky-50 shadow-md rounded-3xl p-4 flex flex-col h-[500px] md:w-[70%] lg:w-full relative mx-auto">
       <p className="text-gray-500 -top-6 absolute">Beta Version</p>
       <div className="flex-1 overflow-y-auto mb-4">
         {messages.map((msg, idx) => (
@@ -104,7 +104,7 @@ const Chat = () => {
           </motion.div>
         ))}
       </div>
-      <div className="flex border border-red-500">
+      <div className="flex">
         <input
           type="text"
           className="flex-1 border rounded-l-lg p-2 w-2/3"
