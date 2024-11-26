@@ -5,48 +5,7 @@ const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const Chat = () => {
-  const [messages, setMessages] = useState([
-    {
-      sender: "user",
-      text: "Test",
-    },
-    {
-      sender: "bot",
-      text: "lorem ipsum",
-    },
-    {
-      sender: "user",
-      text: "Test",
-    },
-    {
-      sender: "bot",
-      text: "lorem ipsum",
-    },
-    {
-      sender: "user",
-      text: "Test",
-    },
-    {
-      sender: "bot",
-      text: "lorem ipsum",
-    },
-    {
-      sender: "user",
-      text: "Test",
-    },
-    {
-      sender: "bot",
-      text: "lorem ipsum",
-    },
-    {
-      sender: "user",
-      text: "Test",
-    },
-    {
-      sender: "bot",
-      text: "lorem ipsum",
-    },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
   const handleSend = async () => {
