@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fontsource/inter/variable.css";
+@import "font-awesome/css/font-awesome.min.css";
+
+/* Gradient Animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-animate {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4, #3b82f6);
+  background-size: 300% 300%;
+  animation: gradientMove 5s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  
+}
+
